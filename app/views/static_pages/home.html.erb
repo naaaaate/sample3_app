@@ -1,4 +1,9 @@
-<h1>Sample App</h1>
-<p>
-  This is the sample app for rails tutorial home
-</p>
+<div class="center jumbotron">
+  <h1>Welcome to the Sample App by NATE </h1>
+  <h2>This is the homepage for the
+    <a href="http://railstutorial.org">Ruby on Rails Tutorial</a> sample application.
+  </h2>
+  <%= link_to "Sign Up Now", signup_path, class: "btn btn-primary" %>
+</div>
+
+<%= link_to image_tag("rails.png", alt: "Rails logo"), "http://railstutorial.org/" %>
