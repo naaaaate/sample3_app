@@ -67,6 +67,7 @@ class UserTest < ActiveSupport::TestCase
     assert_not @user.valid?
   end
 
-
-
+  test 'authenticated? method should return false for user with a nil remember digest -- for when user in firefox and chrome and logout of firefox.. if logout chrome it wont return an error bc remember digest is nil on the redirect..' do
+    assert_not @user.authenticated?('')
+  end
 end
