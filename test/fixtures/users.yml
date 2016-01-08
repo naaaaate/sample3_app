@@ -20,9 +20,9 @@ mallory:
   password_digest: <%= User.digest('password') %>
 
 <% 30.times do |n| %>
-user:
-  name:  "User #{n}"
-  email: "user-#{n}@example.com"
-  password_digest: User.digest('password')
+user_<%= n %>:
+  name:  <%= "User #{n}" %>
+  email: <%= "user-#{n}@example.com" %>
+  password_digest: <%= User.digest('password') %>
 <% end %>
 
